@@ -23,6 +23,42 @@ export default new Router({
       name: 'drawer',
       component: () =>
         import(/* webpackChunkName: "list" */ './views/Drawer.vue')
+    },
+    {
+      path: '/cards',
+      name: 'cards',
+      component: () =>
+        import(/* webpackChunkName: "cards" */ './views/Cards.vue')
+    },
+    {
+      path: '/simple',
+      name: 'simple',
+      component: () =>
+        import(/* webpackChunkName: "simple" */ './views/Simple.vue')
+    },
+    {
+      path: '/stagger',
+      name: 'stagger',
+      component: () =>
+        import(/* webpackChunkName: "stagger" */ './views/Stagger.vue')
+    },
+    {
+      path: '/state',
+      name: 'state',
+      component: () =>
+        import(/* webpackChunkName: "state" */ './views/State.vue')
+    },
+    {
+      path: '/timeline',
+      name: 'timeline',
+      component: () =>
+        import(/* webpackChunkName: "timeline" */ './views/Timeline.vue')
+    },
+    {
+      path: '/master',
+      name: 'master',
+      component: () =>
+        import(/* webpackChunkName: "master" */ './views/Master.vue')
     }
   ]
 })

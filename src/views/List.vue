@@ -2,9 +2,9 @@
   <div>
     <input type="text" v-model="newContact" placeholder="Name" />
     <button @click="addContact">Add Contact</button>
-    <button @click="sortContact">Sort Contact</button>
+    <button @click="sortContacts">Sort</button>
 
-    <transition-group name="slide-up" tag="ul" appear="false">
+    <transition-group name="slide-up" tag="ul" appear>
       <li v-for="contact in contacts" :key="contact">
         {{ contact }}
       </li>
@@ -25,7 +25,7 @@ export default {
       this.contacts.push(this.newContact)
       this.newContact = ''
     },
-    sortContact() {
+    sortContacts() {
       this.contacts.sort()
     }
   }
